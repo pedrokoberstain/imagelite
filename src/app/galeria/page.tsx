@@ -23,7 +23,8 @@ export default function GaleriaPage() {
         key={image.url}
         nome={image.name}
         src={image.url}
-        tamanho={image.size?.toString()}
+        tamanho={image.size}
+        extension={image.extension}
         dataUpload={image.uploadDate}
       />
     );
